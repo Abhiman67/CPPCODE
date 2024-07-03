@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 
-// BUBBLE SORT
+//BUBBLE SORT
 // void bubble (int *arr,int l){
 // for (int i=0;i<l-1;i++){
 
 //     for(int j=0;j<l-i-1;j++){
 
-//         if(arr[j]>arr[j+1]){
+//          if(arr[j]>arr[j+1]){
 //             swap(arr[j],arr[j+1]);
 //         }
 //     }
@@ -38,7 +38,7 @@ using namespace std;
 //         for(int j=i;j<l;j++){
 
 
-//             if(arr[j]>arr[minnu]){
+//             if(arr[j]<arr[minnu]){
 
               
 //                 minnu=j;
@@ -131,7 +131,7 @@ using namespace std;
 //     countsort(arr,l);
 //     return 0 ;}
 
-/// inbuilt sort
+//  inbuilt sort
 // int main (){
 //     int arr[8]={1,4,1,3,2,4,3,7};
 //     int l = sizeof(arr)/sizeof(int);
