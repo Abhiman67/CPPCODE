@@ -3,36 +3,36 @@
 using namespace std ;
 
 //// 
-// int main (){
-//    int row,col;
-//    cout << "enter row";
-//    cin >> row;
-//    cout << "enter col";
-//    cin >> col ;
+int main (){
+   int row,col;
+   cout << "enter row";
+   cin >> row;
+   cout << "enter col";
+   cin >> col ;
 
-//    int ** matrix = new int*[row];
+   int ** matrix = new int*[row];
 
-//    for (int i=0;i<row;i++){
-//     matrix[i]= new int [col];
-//    } 
-//    int x=1;
+   for (int i=0;i<row;i++){
+    matrix[i]= new int [col];
+   } 
+   int x=1;
 
-//    for (int  i = 0; i < row; i++)
-//    {
-//     for (int j = 0; j < col; j++)
-//     {
-//         matrix[i][j]= x++;
-//         cout << matrix[i][j]<< " " ;
+   for (int  i = 0; i < row; i++)
+   {
+    for (int j = 0; j < col; j++)
+    {
+        matrix[i][j]= x++;
+        cout << matrix[i][j]<< " " ;
 
-//     }
-//         cout << endl;
+    }
+        cout << endl;
 
     
-//    }
+   }
    
-//    return 0;
+   return 0;
     
-// }
+}
 //// vectors
 
 //   vector<int> PairSum(vector<int>arr,int target){
@@ -139,20 +139,20 @@ using namespace std ;
 // }
 
 ///  2D ARRAYS
-int main(){
+// int main(){
 
-vector<vector<int>>matrix= {{1,2,3},{4,5,6},{7,8,9}};
+// vector<vector<int>>matrix= {{1,2,3},{4,5,6},{7,8,9}};
 
 
-for(int i=0;i<matrix.size();i++){
+// for(int i=0;i<matrix.size();i++){
      
-     for(int j=0;j<matrix[i].size();j++){
+//      for(int j=0;j<matrix[i].size();j++){
 
-        cout << matrix[i][j] << " "   ;
+//         cout << matrix[i][j] << " "   ;
 
-     }
-     cout << endl;
-}
-}
+//      }
+//      cout << endl;
+// }
+// }
 
 
