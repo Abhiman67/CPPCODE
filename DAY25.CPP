@@ -7,14 +7,14 @@ class Node {
     int data;
     Node*Next;
 
-    Node(int n){
+    Node(int n){ 
         
         data=n;
         Next=NULL;
 
     }
 
-
+ 
 };
 
 class List {
@@ -82,7 +82,20 @@ void printlist(){
     
 }
 
+void insert (int val,int pos){
 
+  Node*newnode = new Node (val);
+  Node*temp=head;
+
+
+  for(int i=0;i<pos-1;i++){
+    temp=temp->Next;
+} 
+
+   newnode->Next=temp->Next;
+   temp->Next=newnode;
+   
+} 
 
 };
 
@@ -95,6 +108,9 @@ int main(){
     ll.push_front(3);
     ll.push_front(2);
     ll.push_front(1);
+    ll.printlist();
+    cout << endl;
+    ll.insert(100,2);
     ll.printlist();
 
     return 0;
