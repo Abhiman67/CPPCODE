@@ -13,6 +13,12 @@ class Node {
         Next=NULL;
 
     }
+    ~Node(){
+        if(Next != NULL){
+            delete Next;
+            Next=NULL;
+        }
+    }
 
  
 };
@@ -64,6 +70,7 @@ class List {
         }
     }
 
+
 ///// PRINTING LINK LIST
 
 void printlist(){
@@ -96,6 +103,13 @@ void insert (int val,int pos){
    temp->Next=newnode;
    
 } 
+~List(){
+    if(head!=NULL){
+        delete head;
+        head=NULL;
+    }
+
+}
 
 };
 
