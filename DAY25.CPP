@@ -16,6 +16,8 @@ class Node {
     ~Node(){
         if(Next != NULL){
             delete Next;
+            free(Next);
+
             Next=NULL;
         }
     }
@@ -110,6 +112,18 @@ void insert (int val,int pos){
     }
 
 }
+void search(int s);{
+
+
+    Node* temp=head;
+
+     while (temp!=NULL)
+    {
+        if(temp->)
+    }
+    
+}
+
 
 };
 
