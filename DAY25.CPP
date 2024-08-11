@@ -119,7 +119,7 @@ void search(int s);{
 
      while (temp!=NULL)
     {
-        if(temp->)
+        if(te.)
     }
     
 }
