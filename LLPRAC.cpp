@@ -97,8 +97,9 @@ void insertatpos(int val,int pos){
         return;
     }
     for(int i=0;i<pos-1;i++){
-        temp=temp->Next;
-    }
+         temp=temp->Next;
+ 
+        }
     newnode->Next=temp->Next;
     temp->Next=newnode;
 

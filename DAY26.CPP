@@ -2,6 +2,7 @@
 using namespace std;
 
 class Node{
+    
     public:
     int Data;
     Node*Prev;
@@ -21,9 +22,9 @@ void print(Node*Head){
     while(temp!=NULL){
         cout << temp->Data;
         temp=temp->Next;
-
+     cout << "   ";
     }
-    cout << " ";
+    
     cout << endl;
 
 }
@@ -52,29 +53,33 @@ void InsertAtTail(Node*&Tail,int d){
     Node *temp = new Node(d);
     Tail->Next=temp;
     temp->Prev=Tail;
-    temp=Tail;
+   Tail=temp;
 
 }
 
-void InsertAtPosition(Node* &Head ;int pos,int d){
+void InsertAtPosition(Node*&Head,int pos,int d){
 
-    if(pos===1){
+    if(pos==1){
         InsertAtHead(Head,d);
-         
-         return head;
-         }
+        return;
+        
+    }
 
-         
+
+
 }
+
+
+
 int main(){
 
     Node*newnode= new Node(10);
     Node*Head=newnode;
-    Node*Tail=newnode; 
+    Node*Tail=newnode;
+
     InsertAtHead(Head,69);
-    InsertAtTail(Tail,3);
+    InsertAtTail(Tail,96);
     print(Head);
-  
 
 
     return 0;
